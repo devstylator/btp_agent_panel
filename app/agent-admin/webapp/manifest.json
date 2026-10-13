@@ -1,0 +1,33 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "com.example.agentadmin",
+    "type": "application",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": { "version": "0.1.0" }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": { "desktop": true, "tablet": true, "phone": true }
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "com.example.agentadmin.view.Main",
+      "type": "XML",
+      "id": "main"
+    },
+    "dependencies": {
+      "minUI5Version": "1.108.0",
+      "libs": { "sap.m": {}, "sap.f": {}, "sap.tnt": {} }
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": { "bundleName": "com.example.agentadmin.i18n.i18n" }
+      }
+    },
+    "contentDensities": { "compact": true, "cozy": true }
+  }
+}

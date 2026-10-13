@@ -1,0 +1,4 @@
+ID,name,description,category,connection,permissionScope,status,requiresApproval
+55555555-5555-4555-8555-555555555555,Read service health,Read-only health check for explicitly connected services,CF Service,health endpoint reference,GET /health only,Ready,true
+66666666-6666-4666-8666-666666666666,Knowledge lookup,Searches approved internal knowledge sources,MCP,https://mcp.example.invalid,search(query) only,Configuration needed,true
+77777777-7777-4777-8777-777777777777,Read business data,Reads an explicitly approved SAP OData service,SAP OData,configured destination,GET on approved entity sets only,Configuration needed,true

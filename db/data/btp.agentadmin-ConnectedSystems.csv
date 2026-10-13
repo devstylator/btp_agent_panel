@@ -1,0 +1,3 @@
+ID,name,systemType,endpoint,bindingName,accessScope,status
+88888888-8888-4888-8888-888888888888,S/4HANA Sandbox,SAP S/4HANA,https://s4.example.invalid,ERP_DESTINATION,Read approved demo entities only,Not connected
+99999999-9999-4999-8999-999999999999,Cloud Foundry Runtime,BTP Service,,cf-runtime-binding,Read service metadata only,Binding required

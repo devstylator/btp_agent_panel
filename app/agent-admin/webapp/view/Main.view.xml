@@ -1,0 +1,43 @@
+<mvc:View
+  controllerName="com.example.agentadmin.controller.Main"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  displayBlock="true">
+  <App id="app">
+    <Page showHeader="false" class="appPage">
+      <content>
+        <VBox class="rootLayout" fitContainer="true">
+          <OverflowToolbar class="appHeader">
+            <Button icon="sap-icon://menu2" type="Transparent" press=".onToggleNav" tooltip="{i18n>toggleNavigation}" />
+            <Text text="BTP" class="brandMark" />
+            <Title text="{i18n>appTitle}" level="H4" />
+            <ToolbarSpacer />
+            <ObjectStatus text="{i18n>prototypeBadge}" state="Information" icon="sap-icon://lab" />
+            <Avatar initials="DA" displaySize="XS" class="profileAvatar" />
+          </OverflowToolbar>
+          <HBox class="bodyLayout" fitContainer="true">
+            <VBox id="sideNav" class="sideNav">
+              <Text text="{i18n>workspaceLabel}" class="sideNavCaption" />
+              <Button text="{i18n>overview}" icon="sap-icon://home" type="Transparent" press=".onNavigate"><customData><core:CustomData key="page" value="overview" /></customData></Button>
+              <Button text="{i18n>agents}" icon="sap-icon://ai" type="Transparent" press=".onNavigate"><customData><core:CustomData key="page" value="agents" /></customData></Button>
+              <Button text="{i18n>playground}" icon="sap-icon://discussion-2" type="Transparent" press=".onNavigate"><customData><core:CustomData key="page" value="playground" /></customData></Button>
+              <Text text="{i18n>configurationLabel}" class="sideNavCaption navSection" />
+              <Button text="{i18n>providers}" icon="sap-icon://cloud" type="Transparent" press=".onNavigate"><customData><core:CustomData key="page" value="providers" /></customData></Button>
+              <Button text="{i18n>tools}" icon="sap-icon://wrench" type="Transparent" press=".onNavigate"><customData><core:CustomData key="page" value="tools" /></customData></Button>
+              <Button text="{i18n>connections}" icon="sap-icon://chain-link" type="Transparent" press=".onNavigate"><customData><core:CustomData key="page" value="connections" /></customData></Button>
+              <Text text="{i18n>governanceLabel}" class="sideNavCaption navSection" />
+              <Button text="{i18n>accessRoles}" icon="sap-icon://key-user-settings" type="Transparent" press=".onNavigate"><customData><core:CustomData key="page" value="access" /></customData></Button>
+              <Button text="{i18n>logs}" icon="sap-icon://activity-items" type="Transparent" press=".onNavigate"><customData><core:CustomData key="page" value="logs" /></customData></Button>
+              <VBox class="navFooter">
+                <Text text="{i18n>secureByDesign}" class="footerTitle" />
+                <Text text="{i18n>secureByDesignHint}" class="footerHint" />
+              </VBox>
+            </VBox>
+            <ScrollContainer id="contentHost" class="contentHost" height="100%" vertical="true" horizontal="false" focusable="true" />
+          </HBox>
+        </VBox>
+      </content>
+    </Page>
+  </App>
+</mvc:View>
