@@ -1,0 +1,16 @@
+{
+  "servers": {
+    "cds-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@cap-js/mcp-server@0.0.7"]
+    },
+    "fiori-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["--yes", "@sap-ux/fiori-mcp-server@1.15.9", "fiori-mcp"],
+      "timeout": 600
+    }
+  },
+  "inputs": []
+}

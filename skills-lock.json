@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "cap-add-remote-service": {
+      "source": "capire/skills",
+      "sourceType": "github",
+      "skillPath": "skills/cap-add-remote-service/SKILL.md",
+      "computedHash": "a042a9435b4edd8d01fe6e6bea6cf32519f218a2b9ae07877ce049fe55b7508a"
+    },
+    "cap-developer": {
+      "source": "capire/skills",
+      "sourceType": "github",
+      "skillPath": "skills/cap-developer/SKILL.md",
+      "computedHash": "ce284f0c5b164347d51311ddb75c0d0accff4886ce7368a088705a68a8202a7c"
+    },
+    "cf-cli": {
+      "source": "SAP-samples/joule-a2a-agent-toolkit",
+      "sourceType": "github",
+      "skillPath": "skills/cf-cli/SKILL.md",
+      "computedHash": "5c25e4d6bea09ceb4d713c40b4adf68b6dcd7bf50ad11e1f6e5606c3a863efb6"
+    }
+  }
+}
